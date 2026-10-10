@@ -1,0 +1,99 @@
+.home-card {
+  position: relative;
+}
+
+.topline {
+  align-items: flex-start;
+}
+
+.brand-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.shop-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 43px;
+  padding: 9px 16px;
+  border: 1px solid #caa94d;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--red), #9e0f1d);
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.035em;
+  box-shadow: 0 7px 15px #ba162729;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.shop-button svg {
+  width: 19px;
+  height: 19px;
+  fill: none;
+  stroke: #f7df8a;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: 0 0 auto;
+}
+
+.shop-button:hover {
+  background: linear-gradient(135deg, #a40f1d, #850b16);
+  box-shadow: 0 9px 19px #ba162738;
+  transform: translateY(-1px);
+}
+
+.shop-button:focus-visible {
+  outline: 3px solid #d5b878;
+  outline-offset: 3px;
+}
+
+.home-shop-button {
+  position: absolute;
+  top: 28px;
+  left: 36px;
+  z-index: 1;
+}
+
+@media (max-width: 800px) {
+  .shop-button {
+    min-height: 40px;
+    padding: 8px 13px;
+    font-size: 0.68rem;
+  }
+
+  .shop-button svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .home-shop-button {
+    top: 20px;
+    left: 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  .brand-area {
+    width: 100%;
+  }
+
+  .brand-area .shop-button {
+    width: auto;
+  }
+
+  .home-content {
+    padding-top: 82px;
+  }
+
+  .home-shop-button {
+    max-width: 170px;
+  }
+}
